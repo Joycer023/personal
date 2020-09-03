@@ -17,6 +17,13 @@ p {
     font-weight: 300;
     color: white;
     justify-items: center;
+    font-size: 115%;
+}
+
+.about{
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
 }
 
 /* Navigation settings */
@@ -63,7 +70,9 @@ nav a {
 }
 
 nav a:hover {
-    color: orange;
+    color: black;
+  background: #e1e1e1;
+  border-top: 1px solid black;
 }
 
 /*hero-image settings */
@@ -190,6 +199,16 @@ nav a:hover {
     grid-column-gap: 0px;
     grid-row-gap: 30px;
     justify-content: center;
+  }
+
+  .grid-container2{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 500px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: left;
+
   }
 
   .grid-item2-profile{
