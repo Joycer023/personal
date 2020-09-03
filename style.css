@@ -10,13 +10,13 @@ h1 {
     font-family: 'Work Sans', sans-serif;
     color: white;
     font-weight: 300;
-    padding: 60px;
+    justify-items: center;
 }
 
 p {
     font-weight: 300;
     color: white;
-    padding: 60px;
+    justify-items: center;
 }
 
 /* Navigation settings */
@@ -68,7 +68,16 @@ nav a:hover {
 
 /*hero-image settings */
 .image-container-banner{
-    background-image: url("faq-background.jpg");
+    background-image: url("light-bulb.jpg");
+    height: 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.image-container-banner-profile{
+    background-image: url("dashboard-background.jpg");
     height: 100%;
     background-position: center; 
     background-repeat: no-repeat;
@@ -82,16 +91,44 @@ nav a:hover {
     width: 100%;
     color: white;
     height: auto;
-    margin-top: 200px;
+    margin-top: 0px;
+}
+
+.banner-faq{
+    font-weight: bold;
+    font-size: 130px;
+    position: center;
+    color: #A8A8A8;
+}
+
+.banner-faq-2{
+    font-weight: bold;
+    font-size: 40px;
+    margin: -50px;
+    color: #A8A8A8;
+}
+
+.banner-profile{
+  font-weight: bold;
+    font-size: 130px;
+    position: center;
+    color: #4a4a4a;
+}
+
+.banner-profile-2{
+  font-weight: bold;
+  font-size: 40px;
+  margin: -50px;
+  color: #4A4A4A;
 }
 
 /* FAQ Accordion settings*/ 
 .accordion {
-    max-width: 1000px;
+    max-width: 1200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
-    background: darkorange;
+    background: #4A4A4A;
     margin:auto; 
   }
   
@@ -102,7 +139,7 @@ nav a:hover {
   
   .accordion__label {
     display: block;
-    color: #2B2B2B;
+    color: white;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -149,16 +186,14 @@ nav a:hover {
   .grid-container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 700px 1500px;
+    grid-template-rows: 500px 1500px;
     grid-column-gap: 0px;
     grid-row-gap: 30px;
     justify-content: center;
   }
 
-  .grid-item1 {
-
-  }
-
-  .grid-item2 {
-
+  .grid-item2-profile{
+      justify-content: center;
+      margin-right: 60px;
+      margin-left: 60px;
   }
