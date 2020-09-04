@@ -39,6 +39,13 @@ a{
 }
 
 /*faq settings*/
+h3{
+  text-align: center;
+  padding: 10px;
+}
+
+
+/*faq settings table*/
 table.table-faq-costs {
   width:80%;
   background-color:#2B2B2B;
@@ -84,6 +91,7 @@ table.table-faq-costs thead {
       justify-content: center;
       margin-right: 60px;
       margin-left: 60px;
+      grid-template-rows: 500px;
   }
 
 /* Navigation settings */
