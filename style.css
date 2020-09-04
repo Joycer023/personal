@@ -20,6 +20,9 @@ p {
     font-size: 16px;
 }
 
+a{
+  color: grey;
+}
 /*profile page settings */
 .about{
   text-align: center;
@@ -33,6 +36,28 @@ p {
   font-weight: 300;
   justify-items: center;
 
+}
+
+/*faq settings*/
+table.table-faq-costs {
+  width:80%;
+  background-color:#2B2B2B;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  color: white;
+}
+
+table.table-faq-costs td, table.table-faq-costs th {
+  border-width: 2px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  padding: 5px;
+}
+
+table.table-faq-costs thead {
+  background-color: #474747;
 }
 
   /* Grid settings*/ 
@@ -149,7 +174,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(214, 214, 214);
+  color: black;
 }
 
 .nav-toggle:checked ~ nav {
