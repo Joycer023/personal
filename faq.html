@@ -4,6 +4,7 @@
 <title>faq</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
@@ -39,10 +40,10 @@
         <div id="content_faq">
           <h2 class="faq">Op deze pagina vind je de veel gestelde vragen omtrent het hz. De FAQ is opgedeeld in verschillende secties:</h3>
           <ul class="faq">
-            <li><a href="#technisch">Technisch</a></li>
-            <li><a href="#bereikbaarheid">Bereikbaarheid</a></li>
-            <li><a href="#reservaties">Reservaties</a></li>
-            <li><a href="#corona">Corona</a></li>
+            <li><a href="#technisch" id="links-faq">Technisch</a></li>
+            <li><a href="#bereikbaarheid" id="links-faq">Bereikbaarheid</a></li>
+            <li><a href="#reservaties" id="links-faq">Reservaties</a></li>
+            <li><a href="#corona" id="links-faq">Corona</a></li>
           </ul>
           <h3 id="bereikbaarheid">Technisch</h3>
             <div class="accordion">
@@ -52,7 +53,7 @@
                   <div class="accordion__content">
                     <p>Hoe print je vanaf je laptop op hz?</p>
                     <p>
-                      Ga naar <a href="http://print.hz.nl">print.hz.nl</a> <br>
+                      Ga naar <a href="http://print.hz.nl" target="_blank">print.hz.nl</a> <br>
                         - Voer je gebruikersnaam en wachtwoord van de HZ in en klik op aanmelden. <br>
                         - Klik op <i>Browse...</i> en selecteer het bestand dat je wil afdrukken <br>
                         - Klik op <i>volgende.</i> (herhaal de vorige stap als je meer documenten wil toevoegen). <br>
@@ -221,8 +222,8 @@
                     <label for="section7" class="accordion__label">Plan je reis naar HZ!</label>
                     <div class="accordion__content">
                         <p>Plan je reis naar HZ!</p>
-                            <p> <a href="https://www.google.nl/maps/dir//HZ+University+of+Applied+Sciences,+Het+Groene+Woud,+Middelburg/@51.4954199,3.5390084,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c490d0a317d04d:0xe74a28385302684c!2m2!1d3.6090478!2d51.4953339?hl=nl">Plan hier je auto- of fietsroute!</a><br>
-                              <a href="https://9292.nl/plan/aankomst/2013-10-29T1345?naarRef=middelburg/bushalte-koestraat-centrum">Plan hier je OV-route!</a>
+                            <p> <a href="https://www.google.nl/maps/dir//HZ+University+of+Applied+Sciences,+Het+Groene+Woud,+Middelburg/@51.4954199,3.5390084,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c490d0a317d04d:0xe74a28385302684c!2m2!1d3.6090478!2d51.4953339?hl=nl" target="_blank">Plan hier je auto- of fietsroute!</a><br>
+                              <a href="https://9292.nl/plan/aankomst/2013-10-29T1345?naarRef=middelburg/bushalte-koestraat-centrum" target="_blank">Plan hier je OV-route!</a>
                         </p>
                       </div>
                     </div>
@@ -238,7 +239,7 @@
                         <label for="section8" class="accordion__label">Hoe boek ik een project ruimte? </label>
                         <div class="accordion__content">
                             <p>Hoe boek ik een project ruimte? </p>
-                              <p>Ga naar <a href="https://topdesk.hz.nl">topdesk.hz.nl</a>
+                              <p>Ga naar <a href="https://topdesk.hz.nl" target="_blank">topdesk.hz.nl</a>
                               Klik op <i> nieuwe reservering</i><br>
                               klik op <i> Reserveer projectgroep ruimten</i><br>
                               Selecteer een dag<br>
@@ -261,21 +262,28 @@
                                 <input type="radio" name="example_accordion" id="section9" class="accordion__input">
                                 <label for="section9" class="accordion__label">Wat te doen bij gezondheidsklachten?</label>
                                 <div class="accordion__content">
-                                    <p>Wat te doen bij gezondheidsklachten?</p>
-                                      <p>
-                                        Heb je serieuze klachten als verkoudheid, hoesten en/of koorts? Blijf thuis en meld je ziek. Worden de klachten erger, neem dan telefonisch contact op met je huisarts of de GGD. <br>
-                                        <br>
-                                        Meld het direct bij je opleidingscoördinator of leidinggevende indien bij jou de verdenking bestaat van besmetting met het coronavirus en meld je ook ziek. 
-                                        </p>
-                                      </div>
-                                    </div>        
+                                  <p>Wat te doen bij gezondheidsklachten?</p>
+                                  <p> Heb je serieuze klachten als verkoudheid, hoesten en/of koorts? Blijf thuis en meld je ziek.  Worden de klachten erger, neem dan telefonisch contact op met je huisarts of de GGD. <br>
+                                  <br>
+                                  Meld het direct bij je opleidingscoördinator of leidinggevende indien bij jou de verdenking bestaat van besmetting met het coronavirus en meld je ook ziek.</p>
+                                </div>
+                              </div>        
+                            </div>
+                         </div>
+                          <br>
+                        </div>
 
-
+<footer>
+  <div class="footer_container">
+    <div class="logo2"> <p id="footer">Joyce Roth 	&copy;  2020 All Rights Reserved. </p></div>
+      <div class="social_media">
+        <a href="https://nl-nl.facebook.com/joyce.roth" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/j0yce_codes/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/joyce-roth-200ba11b2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p id="footer">Joyce Roth 	&copy;  2020 All Rights Reserved.</p>
     </div>
-  </div>
-        
-
-</div>
+</footer>
 
 </body>
 </html>
