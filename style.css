@@ -170,7 +170,7 @@ td#blok{
   .grid-container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 500px 800px;
+    grid-template-rows: 500px 1800px;
     grid-column-gap: 0px;
     grid-row-gap: 30px;
     justify-content: center;
@@ -211,8 +211,6 @@ td#blok{
     margin-left:60px;
     margin-right: 60px;
   }
-
-
 
 /* Navigation settings */
 header {
@@ -661,7 +659,6 @@ img#github:hover{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap-reverse;
-    padding-top: 20px;
   }
   
   .logo2{
