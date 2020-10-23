@@ -2,48 +2,51 @@
 <html lang="nl">
   <meta charset="UTF-8">
   <head>
-    <title>HOME |  Joyce Roth
+    <title>PROFESSION |  Joyce Roth
     </title>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=EB+Garamond&family=Karma:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
-  <body class='profession'>
     <header>
-      <nav>
-        <ul>
-          <li class='navbar'>
-            <a href="index.html">Home
-            </a>
-          </li>
-          <li class='navbar'>
-            <a href="profile.html">Profile
-            </a>
-          </li>
-          <li class='navbar'>
-            <a href="dashboard.html">Dashboard
-            </a>
-          </li>
-          <li class='navbar' id='navbarText'>Joyce
-          </li>
-          <li class='navbar'>
-            <a href="motivation.html">Motivation
-            </a>
-          </li>
-          <li class='navbar'>
-            <a href="profession.html">Profession
-            </a>
-          </li>
-          <li class='navbar'>
-            <a href="faq.html">FAQ
-            </a>
-          </li>
-        </ul>
+        <nav>
+            <div class="logo">Joyce Roth</div>
+      <label for="btn" class="icon">
+              <span class="fas fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
+            <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="profile.html" >Profile</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li>
+       <label for="btn-1" class="show">Profession +</label>
+                <a href="profession.html">Profession</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+      <li><a href="nordwave.html" >Nordwave Security</a></li>
+      <li><a href="capgemini.html">Capgemini</a></li>
+      <li><a href="centric.html">Centric</a></li>
+      <li><a href="ing.html">ING Group</a></li>
+      <li><a href="bol.html">Bol.com</a></li>
+      <li><a href="macaw.html">Macaw</a></li>
+      <li><a href="yoursurprise.html">YourSurprise</a></li>   
+      <li><a href="veracode.html">VeraCode</a></li> 
+      </ul>
+      </li>
+      <li><a href="motivation.html">Motivation</a></li>
+      <li><a href="faq.html">FAQ</a></li>
       </nav>
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span>
-        </span>
-      </label>
+      
+        
+      <script>
+            $('.icon').click(function(){
+              $('span').toggleClass("cancel");
+            });
+        
+      
+          </script>
+      
     </header>
     <main>
         <div class="grid-container">
@@ -71,7 +74,9 @@
                         <div class="projcard-title">Nordwave Security</div>
                         <div class="projcard-bar"></div>
                         <div class="projcard-description">Nordwave Security is een bedrijf wat zich richt security vraagstukken van hun klanten. Het bedrijf is in 2006 opgericht door John van Veen. Ze verlenen verschillende diensten, zoals Penetration Testing (hierdoor vinden de ethical hackers in het bedrijf de kwetsbaarheden bij de klant), Red Team test (realistische aanval op de klant) maar ook NW-CERT: Forensics & recovery. Hierbij is de klant net gehackt en moet Nordwave Security een rechercheonderzoek gaan doen. </div>
-                        <button class="button-two"><span>Lees meer</span></button>
+                        <a href="nordwave.html">
+                            <button class="button-two"><span>Lees meer</span></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -83,7 +88,9 @@
                         <div class="projcard-title">Capgemini</div>
                         <div class="projcard-bar"></div>
                         <div class="projcard-description">Capgemini is een bedrijf dat zijn werkgebied heeft in de ICT en consultancy. Het is een groot bedrijf met meer dan 270.000 medewerkers in meer dan 50 landen. De projecten die het bedrijf doet is heel divers, van ICT-diensten voor HEMA tot Eneco groep helpen met digitale transformatie en businessinnovatie. </div>
-                        <button class="button-two"><span>Lees meer</span></button>
+                        <a href="capgemini.html">
+                            <button class="button-two"><span>Lees meer</span></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -95,7 +102,9 @@
                         <div class="projcard-title">Centric</div>
                         <div class="projcard-bar"></div>
                         <div class="projcard-description">Centric is een IT bedrijf wat zich richt op hoogwaardige IT-diensten. Centric is een groot bedrijf die met veel grote andere bedrijven samenwerkt, zo maken ze bedrijfsapplicaties en maatwerksoftware. Het bedrijf is ook thuis in Cyber Security maar ook in Cloud services. Het bedrijf telt wereldwijd 4.300 medewerkers waaronder 3.000 in Nederland. Ze zijn in 10 landen actief en hebben meer dan 3.500 klanten in Nederland. </div>
-                        <button class="button-two"><span>Lees meer</span></button>
+                        <a href="centric.html">
+                            <button class="button-two"><span>Lees meer</span></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -107,7 +116,9 @@
                         <div class="projcard-title">ING Groep N.V.</div>
                         <div class="projcard-bar"></div>
                         <div class="projcard-description">ING is een van de grootste banken in Nederland en heeft zich gevestigd in verschillende landen. ING heeft een in-house IT bedrijf. Dit bedrijf zorgt voor de IT van de ING Groep. Het bedrijf wilt erg innovatief zijn op het gebied van IT en services. Wereldwijd zijn voor het bedrijf meer dan 50.000 medewerkers in dienst. </div>
-                        <button class="button-two"><span>Lees meer</span></button>
+                        <a href="ing.html">
+                            <button class="button-two"><span>Lees meer</span></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -120,7 +131,9 @@
                         <div class="projcard-bar"></div>
                         <div class="projcard-description">Bol.com heef zich in de laatste jaren ontwikkelt tot dé webshop van Nederland en België. In 2012 werd bol.com overgenomen door Ahold. In 2019 waren ca. 27.000 ondernemers aangesloten bij het bedrijf. Sinds 2011 kunnen ondernemers ook verkopen via bol.com doormiddel van het partnerprogramma. Er zijn meer dan 2.000 medewerkers in dienst bij het bedrijf. 
                         </div>
-                        <button class="button-two"><span>Lees meer</span></button>
+                        <a href="bol.html">
+                            <button class="button-two"><span>Lees meer</span></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -132,7 +145,9 @@
                         <div class="projcard-title">Macaw</div>
                         <div class="projcard-bar"></div>
                         <div class="projcard-description">De hostpresentatie van Marc Lelijveld ging over Macaw. Marc is een Data & AI consultant en naast het werk wat hij doet bij Macaw heeft hij ook een eigen blog en is speaker. Macaw is een bedrijf dat zich heeft ontwikkeld tot een full service digitale partner. Ook zijn ze Microsoft Gold Partner. </div>
-                        <button class="button-two"><span>Lees meer</span></button>
+                        <a href="macaw.html">
+                            <button class="button-two"><span>Lees meer</span></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -144,7 +159,9 @@
                         <div class="projcard-title">YourSurprise</div>
                         <div class="projcard-bar"></div>
                         <div class="projcard-description">De hostpresentatie van Arne ging over Your Surprise. Arne is CTO van het bedrijf, hij zorgt ervoor dat de processen goed lopen. Your surprise is een bedrijf wat gepersonaliseerde gifts maakt, en ze doen alles zelf, van productie tot het beheer van de website.  Het bedrijf is opgericht in 2005 en momenteel hebben zij in 22 landen een website. </div>
-                        <button class="button-two"><span>Lees meer</span></button>
+                        <a href="yoursurprise.html">
+                            <button class="button-two"><span>Lees meer</span></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -156,7 +173,9 @@
                         <div class="projcard-title">VeraCode</div>
                         <div class="projcard-bar"></div>
                         <div class="projcard-description">De hostpresentatie van Niels Tanis ging over VeraCode. Niels is een etisch hacker geweest en is nu Principal Security Researcher. VeraCode is een bedrijf dat security problemen analyseert en verhelpt. Het bedrijf biedt verschillende services aan waaronder Penetratie testen, Technisch support, Application Security Consulting. Het bedrijf is gevestigd in Amerika, maar heeft locaties in verschillende landen. </div>
-                        <button class="button-two"><span>Lees meer</span></button>
+                        <a href="nordwave.html">
+                            <button class="veracode.html"><span>Lees meer</span></button>
+                        </a>
                     </div>
                 </div>
             </div>

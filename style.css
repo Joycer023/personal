@@ -74,172 +74,218 @@ a{
 }
 
 /*Navigation Bar*/
-.navbar {
-  display: inline;
-  font-size: 16px;
-  padding: 30px; 
-  margin-right: 30px;
-  font-family: 'Crete Round', serif;
-}
-
-#navbarText {
-  color: white;
-  font-family: 'Crete Round', serif;
-  font-size: 30px;
-}
-
-header {
-  background: var(--background) black;
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 12%;
-  background-color: rgba(112, 112, 112, 0.65);
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, .75);
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
-  height: 100%;
-  display: flex;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
+nav{
+  margin: auto;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+  z-index: 9999999;
   position: relative;
 }
 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
+nav{
+  background: #76846F;
+}
+nav:after{
   content: '';
-  position: absolute;
+  clear: both;
+  display: table;
 }
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-}
-
-nav {
-  position: absolute;
+nav .logo{
+  float: left;
+  color: black;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
   text-align: center;
-  top: 100%;
-  left: 0;
-  background: var(--background) rgb(58, 58, 58);
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
+  padding-top: 40px;
+  margin-bottom: -40px;
 }
-
-nav ul {
-  margin: 0;
-  padding: 0;
+nav ul{
+  float: right;
+  margin-right: 40px;
   list-style: none;
+  position: relative;
 }
-
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #fff;
+  margin: 0 5px;
 }
-
-nav a {
-  color: white;
+nav ul li a{
+  color: black;
+  line-height: 70px;
   text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: #76846F;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #76846F,
+               0 0 10px #76846F; 
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid white;
   opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  visibility: hidden;
+  transition: top .3s;
 }
-
-nav a:hover {
-  color:black;
+nav ul ul ul{
+  border-top: none;
 }
-
-.nav-toggle:checked ~ nav {
-  transform: scale(1,1);
-}
-
-.nav-toggle:checked ~ nav a {
+nav ul li:hover > ul{
+  top: 70px;
   opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 300px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  background-color: #76846F;
+
+}
+nav ul ul li:hover {
+  background-color: #C5D0BF;
+
+}
+nav ul ul li a{
+  line-height: 50px;
+  color: #fff;
 }
 
-@media screen and (min-width: 800px) {
-  .nav-toggle-label {
-    display: none;
-  }
 
-  
-  nav {
-    all: unset; 
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1,1);
-    background: none;
-    top: initial;
-    left: initial;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+
+@media all and (max-width: 968px) {
+
+  nav ul{
+    margin-right: 0px;
+    float: left;
   }
-  
-  nav ul {
-    display: flex;
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
   }
-  
-  nav li {
-    margin-left: 2em;
-    margin-bottom: 0;
+  .show + a, ul{
+     display: none; 
   }
-  
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-  
-  nav a::before {
-    content: '';
+  nav ul li,nav ul ul li{
     display: block;
-    height: 5px;
-    background: black;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: #76846F;
+    font-size: 18px;
+   padding: 0 15px; 
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: rgb(156, 156, 156);
+  }
+  .icon{
+    display: block;
+    color: black;
     position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
   }
-  
-  nav a:hover::before {
-    transform: scale(1,1);
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
   }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+ 
 }
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+  z-index: 9999999;
+position: relative;
+}
+p.navbar{
+  font-size: 30px;
+  font-weight: 500;
+}
+ nav.active {
+   top: 0;
+   margin-top: 0;
+   padding-top: 0 !important;
+   position: fixed;
+   width: 100%;
+   transition: all 0.5s;
+   text-decoration: none !important;
+}
+
+a.active {
+    background-color: #76846F; 
+  transition: all 0.5s;
+}
+
+
 
 /*Table Dashboard*/
 table.table-faq-costs {
@@ -446,7 +492,7 @@ img#cer:hover, img#oer:hover, img#hzlearn:hover, img#studievoortgang:hover, img#
     grid-column-gap: 0px;
     grid-row-gap: 30px;
     justify-content: center;
-  }
+    }
 
   .grid-container2{
     display: grid;
@@ -688,14 +734,14 @@ img#cer:hover, img#oer:hover, img#hzlearn:hover, img#studievoortgang:hover, img#
   }
   
   
-  .button-two span {
+  .button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
   
-  .button-two span:after {
+  .button span:after {
     content: '»';
     position: absolute;
     opacity: 0;
@@ -704,11 +750,91 @@ img#cer:hover, img#oer:hover, img#hzlearn:hover, img#studievoortgang:hover, img#
     transition: 0.5s;
   }
   
-  .button-two:hover span {
+  .button:hover span {
     padding-right: 25px;
   }
   
-  .button-two:hover span:after {
+  .button:hover span:after {
     opacity: 1;
     right: 0;
   }
+
+/*BlogPost*/
+.masthead {
+  background: #76846F url('http://lorempixel.com/900/240/nature/') no-repeat center center;
+    height: 240px;
+    overflow: hidden;
+}
+
+.wrapper, .wrapper1 {
+  width: 800px;
+  margin: 0 auto;
+}
+
+img.post-img {
+  float: left;
+  border-radius: 50% 50%;
+  margin: 12px 0 0 -140px;
+} 
+
+h1.blogTitle {
+  line-height: 48px;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 36px 0 12px;
+  color: #76846F;
+  margin-bottom: 40px;
+}
+
+h2.blogSubtitle {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #76846F;
+  margin: 24px 0;
+}
+
+h3.blogHeader3, h4, h5, h6 {
+  
+  margin: 24px 0;
+  font-weight: 100;
+  line-height: 24px;
+  color: #76846F;
+}
+
+p1 {
+  margin: 0 0 24px;
+  text-align: justify;
+  color: #555;
+  font-family: 'Karma', serif;
+}
+
+p1.slogan {
+  font-size: 80px;
+  color: #fff;
+  line-height: 240px; 
+}
+
+.blogImg{
+  margin-top: 60px;
+  justify-content: center;
+  width: 800px;
+  height: 300px;
+}
+
+hr.blogHr{
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.blogImgText{
+  width: 100%;
+  margin-top: 10px;
+}
+
+i.citePhoto {
+  font-size: 10px;
+  text-align: justify;
+  color: #555;
+  font-family: 'Karma', serif;
+}
